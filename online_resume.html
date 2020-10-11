@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Rahul Valluri</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+<body >
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom fixed-top">
+        <a href="./index.html" class="navbar-brand">Rahul Valluri</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Resume <span class="sr-only">(current)</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./ink.html" class="nav-link">ChalkPix</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Rahul.</h1>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="accordian" id="accordion">
+            <div class="card bg-dark">
+                <div class="card-header border rounded-top">
+                    <h5 class="pl-0 card-title text-light">
+                        <a data-toggle="collapse" class="text-light" href="#education">Education</a>
+                    </h5>
+                </div>
+                <div id="education" class="collapse show" role="document" data-parent="#accordion">
+                    <div class="card-body text-light">
+                        <ul>
+                            <li class="my-5">
+                                <h6>International Institute of Information Technology, Hyderabad</h6>
+                                <div class="row">
+                                    <div class="col-md-6 text-md-left">
+                                        M.Tech (Computer Science and Information Security)
+                                    </div>
+                                    <div class="col-md-6 text-md-right pr-5">
+                                        2020 - 2022
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="my-5">
+                                <h6>Malla Reddy College of Engineering and Technology</h6>
+                                <div class="row">
+                                    <div class="col-md-6 text-md-left">
+                                        B.Tech (Computer Science and Engineering)
+                                    </div>
+                                    <div class="col-md-6 text-md-right pr-5">
+                                        2015 - 2019
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <div class="card-header border collapsed">
+                    <h5 class="pl-0 card-title text-light">
+                        <a data-toggle="collapse" class="text-light" href="#experience">Experience</a>
+                    </h5>
+                </div>
+                <div id="experience" class="collapse" role="document" data-parent="#accordion">
+                    <div class="card-body text-light">
+                        <ul>
+                            <li>
+                                <h6>SkillTern EduTech</h6>
+                                <p>Web Development Intern</p>
+                                <ul>
+                                    <li>
+                                        Played a key role in building the redesigned front-end for the official website.
+                                    </li>
+                                    <li>
+                                        Developed server-side rendered web pages with Bootstrap along with integration
+                                        to PHP backend
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <div class="card-header border collapsed">
+                    <h5 class="pl-0 card-title text-light">
+                        <a data-toggle="collapse" class="text-light" href="#projects">Projects</a>
+                    </h5>
+                </div>
+                <div id="projects" class="collapse" data-parent="#accordion">
+                    <div class="card-body text-light">
+                        <ul>
+                            <li class="my-4">
+                                <h6>PyLens</h6>
+                                <p>Mushroom Image Classification</p>
+                                <ul>
+                                    <li>
+                                        Retrained VGGNet-16 in Keras Tensorflow to classify mushroom images according 
+                                        to species and categorise the edibility of those species.
+                                    </li>
+                                    <li>
+                                        Achieved 97% accuracy in prediction which exceeds existing solutions by almost 20%
+                                    </li>
+                                    <li>
+                                        Distributed the service through an android app with the model being served 
+                                        from Google cloud.
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="my-4">
+                                <h6>Beat It!</h6>
+                                <p class="m-0 p-0">Virtual Bulletin board for writers</p>
+                                <small>
+                                    <a href="http://bit.ly/beat-it-app-tutorial" class="text-info">
+                                        Demo Link
+                                    </a>&nbsp;&nbsp;
+                                    <a href="http://bit.ly/beat-it-app" class="text-info">
+                                        Site Link
+                                    </a>
+                                </small>
+                                <p></p>
+                                <ul>
+                                    <li>
+                                        A Progressive Web App built with Flutter and Firebase to help writers mapping 
+                                        out the story beats in pre-scripting stage.
+                                    </li>
+                                    <li>
+                                        Features: Collaboration, Customizable story structures, Convertible to PDF for professional 
+                                        business purposes.
+                                    </li>
+                                    <li>
+                                        Currently being used by screenwriters at CSpace, a film incubation centre.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="my-4">
+                                <h6>Synapster</h6>
+                                <p class="m-0 p-0">Napster like file transfer utility</p>
+                                <small>
+                                    <span class="font-italic">Work in Progress.</span>
+                                    <a href="https://github.com/rahulv4667/Synapster" class="text-info">Github Link</a>
+                                </small>
+                                <p></p>
+                                <ul>
+                                    <li>
+                                        Built a peer-to-peerfile sharing utility software that works on 
+                                        *nix systems with custom application protocol.
+                                    </li>
+                                    <li>
+                                        Synchronisation with metadata server which holds dynamic information 
+                                        of active peers.
+                                    </li>
+                                    <li>
+                                        Supports all kinds of files. Built in C, C++.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <div class="card-header border collapsed">
+                    <h5 class="pl-0 card-title text-light">
+                        <a data-toggle="collapse" class="text-light" href="#skills">Skills</a>
+                    </h5>
+                </div>
+                <div id="skills" class="collapse" data-parent="#accordion">
+                    <div class="card-body text-light">
+                        <ul>
+                            <li>
+                                <span class="font-weight-bold">Languages: </span>
+                                C, C++, Dart, JavaScript, Python, Java, SQL, HTML, CSS
+                            </li>
+                            <li>
+                                <span class="font-weight-bold">Technologies: </span>
+                                Firebase, Flutter, TensorFlow, Git, React
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <div class="card-header border collapsed">
+                    <h5 class="pl-0 card-title text-light">
+                        <a data-toggle="collapse" class="text-light" href="#activities">Activites and Achievements</a>
+                    </h5>
+                </div>
+                <div id="activities" class="collapse" data-parent="#accordion">
+                    <div class="card-body text-light">
+                        <ul>
+                            <li>
+                                Runner-up in Blind Coding Competition at Tech Symposium in JNTU-H.
+                            </li>
+                            <li>
+                               First position in Blind Coding for two consecutive years in college.
+                            </li>
+                            <li>
+                                Runner-up in Coding Triathlon in college.
+                            </li>
+                            <li>
+                                Completed Blockchain course conducted by NPTEL in association with IIT, Kharagpur
+                            </li>
+                            <li>
+                                Completed Cisco CCNA Certification
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <div class="card-header border collapsed">
+                    <h5  class="pl-0 card-title text-white">
+                        <a data-toggle="collapse" class="text-light" href="#contact">Contact</a>
+                    </h5>
+                </div>
+                <div id="contact" class="collapse" data-parent="#accordion">
+                    <div class="card-body text-white">
+                        <p>Preferred mode of communication is e-mail. You can try calling, but I won't answer. 
+                            Try whatsapp, it might work.
+                        </p>
+                        <ul>
+                            <li>
+                                E-mail : 
+                                <a href="mailto:4667rahul@gmail.com" class="text-info">4667rahul@gmail.com</a>,
+                                <a href="mailto:rahul.valluri@students.iiit.ac.in" class="text-info">rahul.valluri@students.iiit.ac.in</a>
+                            </li>
+                            <li>
+                                Whatsapp: <a href="tel:+918897297083" class="text-info">+91 88972 97083</a>
+                            </li>
+                            <li>
+                                Mobile Number: <a href="tel:+919121335763" class="text-info">+91 91213 35763</a>
+                            </li>
+                            <li>
+                                Other: 
+                                <span class="flex container">
+                                    <a href="http://github.com/rahulv4667" target="blank" class="mx-2 fa fa-github fa-lg text-info"></a>
+                                    <a href="https://www.linkedin.com/in/rahul-valluri-0396b6153/" target="blank" class="mx-2 fa fa-linkedin fa-lg text-info"></a>
+                                    <a href="https://www.facebook.com/rahul.valluri/" target="blank" class="mx-2 fa fa-facebook fa-lg text-info"></a>
+                                </span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><p></p>
+        <a href="./assets/RahulV_Resume.pdf" target="blank" class="m-4 text-info">PDF Format</a>
+        <br><br><p></p>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+</body>
+</html>

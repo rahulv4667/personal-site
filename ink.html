@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChalkPix</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom fixed-top">
+        <a href="./index.html" class="navbar-brand">Rahul Valluri</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="./online_resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="./ink.html" class="nav-link">ChalkPix</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mainContainer container-fluid d-flex h-100 flex-column flex-fill">
+        
+            <div class="container d-flex flex-column align-items-center">
+                <p>Press 'Record' on the left side and try to draw something on the canvas. If you want, you can talk.</p> 
+                <p>End the recording when content and press the 'Replay' button to replay the recording.</p>
+             </div>
+     
+        <div class="row overflow-auto flex-fill d-flex justify-content-start">          
+            <div class="col-md-6 container border border-primary  d-flex flex-column justify-content-center">
+                <div class="container-fluid d-flex align-self-stretch justify-content-center recordDiv">
+                    <audio class="recorderAudio"></audio>
+                    <canvas class="bg-light recorderCanvas">
+                    </canvas>
+                </div>
+                <br>
+                <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
+                    <p>Status: <span class="recorderStatus">Idle</span></p>
+                    <button class="btn btn-danger recorderBtn">Record</button>
+                </div>
+            </div>
+            <div class="col-md-6 container border border-primary d-flex flex-column justify-content-center">
+                <div class="container-fluid d-flex align-self-stretch justify-content-center replayDiv">
+                    <audio class="replayAudio"></audio>
+                    <canvas class="bg-light replayCanvas">
+                    </canvas>
+                </div>
+                <br>
+                <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
+                    <p>Status: <span class="replayStatus">Idle</span> </p>
+                    <button class="btn btn-success replayBtn">Replay</button>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+        <div class="container-fluid px-4 row d-flex flex-column">
+            <br>
+            <h3 class="container-fluid">What is ChalkPix?</h3>
+            <br>
+            <div class="container-fluid text-justify">
+                <h4>The problem and the solution</h4>
+                <br>
+                <p>
+                    Online classes are always recorded and streamed in traditional video format. While that is fine in many 
+                    cases, this format makes it hard for people with low bandwidth to have a bufferless experience and also 
+                    in the current scenario of meetings and live classes with hundreds of people in a single call, it gets 
+                    very network heavy and lag between video and audio becomes an issue.
+                </p>
+                <br>
+                <p>
+                    One optimisation we can do in this area is to make specialised formats for specific methodologies of teachings.
+                    Even though there have been many advancements in teaching methodologies, the method of writing on board 
+                    and teaching never gets old. Whether it be deep learning lectures by Andrew Ng or additions lecture by
+                    convent school teacher, most people prefer using pen tool to teach even in online mode. There is no point
+                    in trying to screencast every pixel of the recorded screen to all the viewers in this kind of teaching. 
+                </p>
+                <br>    
+                <p>
+                    Although efficient video coding algorithms exist to compress the video, we believe it would more efficient
+                    to just stream mouse movements and events of the whiteboard instead of screenshare. While we haven't done 
+                    any benchmark tests, we believe this will lessen the data to be stored for whiteboard lectures dramatically
+                    and help give the best experience across all devices irrespective of the quality of stream.
+                </p>
+            </div>
+            <br>
+            <div class="container-fluid text-justify">
+                <h4>Existing Solutions</h4>
+                <br>
+                <p>
+                    Whiteboard solutions aren't a new thing. Zoom supports it but the recording is still a video. 
+                    Microsoft Teams supports it but has no option of recording the session yet. Although these solutions exist,
+                    they work differently from how we are thinking of providing the service.
+                </p>
+                <br>
+                <p>
+                    The only product that seems to be close to what we are trying to build is an Indian ed-tech startup 'Vedantu'.
+                    Although they haven't revealed the internal workings of the app, we believe they are following a similar approach
+                    based on the vague terms from their tech blogs.
+                </p>
+                <br>
+                <p>
+                    Even with these solutions, we believe having a open source solution that can be plugged with any kind of
+                    software in any kind of purpose wouldn't harm.
+                </p>
+                <br>
+            </div>
+            <br>
+            <div class="container-fluid text-justify">
+
+                <h4>Roadmap</h4>
+                <br>
+                <ul>
+                    <li class="my-2">
+                        Create a data format(.cpx) that efficiently stores the mouse movements and events. The format must be
+                        usable for both streaming and offline viewing purposes.
+                    </li>
+                    
+                    <li class="my-2">
+                        Create a full-fledged whiteboard with capability to store a recording in .cpx format or stream to
+                        a certain registered URL.
+                    </li>
+                    
+                    <li class="my-2">
+                        Create a web component <code>chalk-pix</code> that works similar to other HTML media elements like
+                        <code>video</code> and <code>audio</code>. The <code>chalk-pix</code> can take a source link to 
+                        .cpx file that is present on a server or a stream URL of a live recording. This is similar to media
+                        elements.
+                    </li>
+                    
+                    <li>
+                        Dicey decisions: 
+                        <ul>
+                            <li>
+                                Integrate video in .cpx format
+                            </li>
+                            <li>
+                                Provide support to .cpx format in general video players. Atleast VLC could be possible.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <br>
+            <div class="container-fluid text-justify">
+                <h4>Concepts borrowed from</h4>
+                <br>
+                <ul>
+                    <li class="my-2">
+                        <span class="font-weight-bold">InkML</span>: This is an open standard for ink based streaming and 
+                        recording that was last updated in 2011.
+                        Most of the concepts required to build <code>chalk-pix</code> are already covered in this specification.
+                        But there is no industry standard implementation that exists or to refer to and also many browsers
+                        aren't supporting it natively. Even with them, the specification doesn't deal with modern
+                        needs like polygon shapes, in-board images, slides etc.
+                    </li>
+                    
+                    <li class="my-2">
+                        <span class="font-weight-bold">MPEG DASH</span>: This shouldn't come as a surprise since 
+                        <code>chalk-pix</code> deals with streaming and there is no better streaming standard currently
+                        than DASH(Dynamic Adaptive Streaming over HTTP). While there isn't much adpative streaming needed
+                        when only pen and shapes are used, there may be a requirement when in-board images and videos are 
+                        used. Also, it is required to adapt audio quality if the bandwidth is too poor.
+                    </li>
+                </ul>
+            </div>
+            <br>
+        </div>
+         
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./scripts/chalkpix.js"></script>
+</body>
+    
+</html>
